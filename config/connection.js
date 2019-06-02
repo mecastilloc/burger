@@ -4,20 +4,20 @@ var mysql = require("mysql");
 //Connection setings
 var dbConnect = mysql.createConnection({
     host: "localhost",
-    port: "3006",
+    port: "3306",
     user: "root",
     password: "root",
-    database: "burger_db",
+    database: "burgers_db",
 });
 
 //Init Db connection
 dbConnect.connect(function (error) {
-    if (err) {
-        console.error("error connecting: " + err.stack);
+    if (error) {
+        console.error("error connecting: " + error.stack);
         return;
     }
-    console.log("connected as id " + connection.threadId);
+    console.log("connected as id " + dbConnect.threadId);
 });
 
 // Export connection for our ORM to use.
-module.exports = dbconnect;
+module.exports = dbConnect;

@@ -119,7 +119,7 @@ For local use:
 
 
 **_Commit 4_**
-
+App set up completed: Server code created, configuration (connection to Data base and custom orm coded), model code created, controller settings added. Now app is able to listen at localhost and connect to Data base.
 
 **_Commit 3_**
 
