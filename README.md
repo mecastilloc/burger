@@ -123,12 +123,11 @@ For local use:
 
 **_Commit 3_**
 
-Made **_$ npm init_** to add express package,  file `package.json`
- created.
+Data Base  connection setup, base queries created.
 
 **_Commit 2_**
 
-File structure created
+File structure created. pakage.json file created, npm dependecies installed
 
 **_Commit 1_**
 
