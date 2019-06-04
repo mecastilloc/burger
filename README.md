@@ -112,7 +112,7 @@ For local use:
 
 
 **_Commit 6_**
-
+test.html added to tes de final app's view to be replicated on handelbars views. CSS file completed for styling.
 
 **_Commit 5_**
 Burger controller completed, not tested yet.

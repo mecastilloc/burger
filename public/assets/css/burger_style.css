@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    color: orangered;
+}
+
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+center{
+    text-align: center;
+}
+
+h1,h3 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+p{
+    font-family: 'Audiowide', cursive;
+}
+.title1, .title2{
+    margin-top: 10%;
+}
+
+
+textarea[type=text] {
+    background-color: black;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: orange;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    width: 50%;
+}
+
+textarea[type=text]:focus {
+    background-color: black;
+    color: orange;
+    border: 1px solid greenyellow;
+    width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .title2{
+        margin-top: 0%;
+    }
+  }
