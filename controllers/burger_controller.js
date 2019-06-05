@@ -1,8 +1,10 @@
 //Set npm packages
 var express = require("express");
 
+
+
 // Import the model (burger.js) to use its database functions.
-var burgerModel = require("../models/burger.js");
+var model = require("../models/burger.js");
 
 //Set router to handle url trhough server
 var router = express.Router();
@@ -10,7 +12,7 @@ var router = express.Router();
 // All the routes and set up logic within those routes where required.
 //Get all de burgers
 router.get("/", function (req, res) {
-    burgerModel.all(function (data) {
+    model.all(function (data) {
         var hbsObject = {
             burgers: data
         };
@@ -19,18 +21,25 @@ router.get("/", function (req, res) {
     });
 });
 //Create a new burger
-router.post("api/burgers", function (req, res) {
-    burgerModel.create([
-        "burger_name"],
-        [
-            req.body.burger_name],
-        function (result) {
-            res.json({ id: result.insertId });
-        });
+router.post("/api/burgers", function (req, res) {
+	console.log(req.body)
+	model.create([
+		"burger_name",
+	], [
+			req.body.burger_name,
+		], function (result) {
+			// Send back the ID of the new quote
+			res.json({ id: result.insertId });
+		});
 });
 //Change burger status, devoured or not.
-router.put("api/burgers/:id", function (req, res) {
-    burguerModel.update({
+router.put("/api/burgers/:id", function (req, res) {
+	console.log(req.params.id)
+	var condition = "id = " + req.params.id;
+
+	console.log("condition", condition);
+
+   model.update({
         devoured: req.body.devoured
     },
         condition, function (result) {

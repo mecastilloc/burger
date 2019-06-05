@@ -110,15 +110,19 @@ For local use:
 
 **_Commit 7_**
 
+Handlebars configuration completed page is rendered correctly.
 
 **_Commit 6_**
+
 test.html added to tes de final app's view to be replicated on handelbars views. CSS file completed for styling.
 
 **_Commit 5_**
+
 Burger controller completed, not tested yet.
 
 
 **_Commit 4_**
+
 App set up completed: Server code created, configuration (connection to Data base and custom orm coded), model code created, controller settings added. Now app is able to listen at localhost and connect to Data base.
 
 **_Commit 3_**
@@ -127,7 +131,9 @@ Data Base  connection setup, base queries created.
 
 **_Commit 2_**
 
-File structure created. pakage.json file created, npm dependecies installed
+File structure created. pakage.json file 
+
+created, npm dependecies installed
 
 **_Commit 1_**
 

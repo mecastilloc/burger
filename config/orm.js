@@ -30,7 +30,7 @@ function objToSql(ob) {
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
             }
-            // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
+            // e.g. {burger_name: 'Lana Del Grey'} => ["burger_name='Lana Del Grey'"]
             // e.g. {sleepy: true} => ["sleepy=true"]
             arr.push(key + "=" + value);
         }
@@ -67,21 +67,26 @@ var orm = {
             cb(result);
         });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
-    update: function (updateTable, objColVals, condition, cb) {
-        var queryString = "UPDATE " + updateTable;
-        queryString += " SET ";
-        queryString += objToSql(objColVals);
-        queryString += " WHERE ";
-        queryString += condition;
-        console.log(queryString);
-        dbConnect.query(queryString, function (err, result) {
-            if (err) {
-                throw err;
-            }
-            cb(result);
-        });
-    },
+    // An example of objColVals would be {burger_name: panther, sleepy: true}
+    update: function (table, objColVals, condition, cb) {
+		var queryString = "UPDATE " + table;
+
+		queryString += " SET ";
+		queryString += objToSql(objColVals);
+		queryString += " WHERE ";
+		queryString += condition;
+
+		console.log(queryString);
+		dbConnect.query(queryString, function (err, result) {
+			if (err) {
+				throw err;
+			}
+
+			cb(result);
+		});
+	},
+
+
     delete: function (table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
