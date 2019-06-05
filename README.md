@@ -107,6 +107,7 @@ For local use:
 
 **_Commit 8_**
 
+jQuery logic completed to interact with the webpage and the data base.
 
 **_Commit 7_**
 

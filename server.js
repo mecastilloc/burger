@@ -4,7 +4,7 @@ var express = require("express");
 var expHandleBars = require("express-handlebars");
 
 //Set de port for the Server
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 //Set app express
 var app = express();
