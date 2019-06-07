@@ -1,22 +1,27 @@
-# friend finder
-A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM
+# Gobble up Ur Burger
+A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM `(Object-relational mapping)`
 
 
-[Live Demo]()
+[Live Demo](https://burgergobbleup.herokuapp.com/)
+
 
 ## Overview
 
- 
-This app uses Express to handle routing and chosen for HTML form  formatting
+This App is a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM, that follows the MVC design pattern; uses Node and MySQL to query and route data in  the app, and Handlebars to generate its HTML. 
 
 [Express](https://www.npmjs.com/package/express)
 
-[Express-Handlebars]
+[Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
 
-[MySql]
+[MySql](https://www.npmjs.)
 
-[Chosen](https://harvesthq.github.io/chosen/)
 
+So Gobble Up Your Burger is a restaurant app that lets users input the names of burgers they'd like to eat. 
+
+* Whenever a user submits a burger's name, the app will display the burger on the left side of the page, waiting to be eaten. 
+* Each burger in the `waiting area` has a `Eat me!` button. When the user clicks it, the burger will move to the page's right side in to the `devoured area`.
+* Each burger in the `devoured area` has a `Back!` button In case a user wants to eat ot again.
+* The app stores every burger in a database, whether devoured or not.
 
 
 ## Settings
@@ -29,85 +34,26 @@ For local use:
 
 3. Start Express server with `$ node server.js`
 
-4. On your web browser go to `localhost:3000,
+4. On your web browser go to `localhost:3000`
 
 5. Enjoy
 
 
 
-## How It Works
-
-1. File Structure:
-
-2. The 
-
-3. The `server.js` file should require the basic npm packages and has the routes configuration.
-
-4. The `htmlRoutes.js` file includes two routes:
-
-   * A GET Route to `/survey` which should display the survey page.
-   * A default, catch-all route that leads to `home.html` which displays the home page.
-
-5. Th:
-
-   * A GET
-   * A PO
-
-6. The app
-
-```json
-{
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/
-```
-
-7. Determinelowing logic:
-
-   * Converts
-   * With nce`.
-     * Example:
-       * Data`
-       * Us`
-       * Total
-   * Absolu.
-   * The clo
-
-8. Once It
-   * The modal
-
 
 ## COMMITS
-
-**_Commit 16_**
-
-
-**_Commit 15_**
-
-
-**_Commit 14_**
-
-
-
-**_Commit 13_**
-
-
-
-**_Commit 12_**
-
-
-
-**_Commit 11_**
-
-
 **_Commit 10_**
+
+Readme.md file update with all i formations about the app. Deploy to Heroku completed. See live Demo
 
 
 **_Commit 9_**
 
+Added data base settings to Heroku deploy
 
 **_Commit 8_**
 
-jQuery logic completed to interact with the webpage and the data base.
+jQuery logic completed to interact with the web page and the data base.
 
 **_Commit 7_**
 
@@ -115,7 +61,7 @@ Handlebars configuration completed page is rendered correctly.
 
 **_Commit 6_**
 
-test.html added to tes de final app's view to be replicated on handelbars views. CSS file completed for styling.
+test.html added to tes de final app's view to be replicated on Handelbars views. CSS file completed for styling.
 
 **_Commit 5_**
 
@@ -132,11 +78,10 @@ Data Base  connection setup, base queries created.
 
 **_Commit 2_**
 
-File structure created. pakage.json file 
+File structure created. package.json file 
 
-created, npm dependecies installed
+created, npm dependencies installed
 
 **_Commit 1_**
 
 Initial commit, repository created
-
